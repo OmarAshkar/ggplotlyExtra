@@ -1,0 +1,12 @@
+Package: ggplotlyExtra
+Title: Extra Convenience Functions for Plotly
+Version: 0.0.1
+Author: Omar I. Elashkar <omar.ibrahim@miuegypt.edu.eg>
+Maintainer: Omar I. Elashkar <omar.ibrahim@miuegypt.edu.eg>
+Depends: R (>= 3.5.0)
+Description: Provide convenience functions for smooth conversion from ggplot to plotly.
+Imports: ggplot2, plotly
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0

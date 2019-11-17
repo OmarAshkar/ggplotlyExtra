@@ -1,0 +1,45 @@
+---
+output: github_document
+always_allow_html: yes
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# ggplotlyExtra
+
+The goal of ggplotlyExtra is to make a ready-customized functions for smooth transition between 'ggplot2' and 'plotly'.  
+
+<!-- ## Installation -->
+
+<!-- You can install the released version of ggplotlyExtra from [CRAN](https://CRAN.R-project.org) with: -->
+
+<!-- ``` r -->
+<!-- install.packages("ggplotlyExtra") -->
+<!-- ``` -->
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(ggplot2)
+library(plotly)
+library(ggplotlyExtra)
+
+p <- ggplot() + ggplotly_histogram(data = ToothGrowth, mapping = aes(len))+
+        xlab("len")
+
+ggplotly(p, tooltip = c("Range", "count", "density"))
+```
+
+
+You can hover on the histogram to see how this works. 
+
