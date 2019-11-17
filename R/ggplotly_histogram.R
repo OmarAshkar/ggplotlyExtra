@@ -1,16 +1,17 @@
-#' Clean `ggplot2` Histogram to be Converted to `Plotly`
+#' Clean 'ggplot2' Histogram to be Converted to 'Plotly'
 #' @description
-#' Create ggplot histogram that translate nicely to plotly.
+#' Create 'ggplot2' histogram that translate nicely to 'plotly'.
 #'
 #' @inheritParams ggplot2::geom_histogram
 #' @return
 #' ggplot bar layer
 #' @export
 #' @details
-#' ggplotly_histogram is a function that is used to create a `ggplot2` histogram, yet on conversion to `plotly` using `ggplotly()`, the resulted plot will hold the correct labeling information, which are "Range", "Count" and "Density".
+#' `ggplotly_histogram()` is a function that is used to create a 'ggplot2' histogram, yet on conversion to 'plotly' using 'ggplotly()', the resulted plot will hold the correct labeling information, which are "Range", "Count" and "Density".
 #'
 #' @importFrom ggplot2 ggplot stat_bin geom_bar layer_data aes
 #' @importFrom plotly ggplotly
+#' @importFrom rlang .data
 #' @examples
 #'
 #' library(ggplot2)
@@ -47,11 +48,11 @@ ggplotly_histogram <- function(data = NULL, mapping = NULL, position = "stack",
         geom_bar(
                 data = layerdata,
                 mapping = aes(
-                        x = x,
-                        y = count,
-                        label1 = Range,
-                        label2 = Count,
-                        label3 = density
+                        x = .data$x,
+                        y = .data$count,
+                        label1 = .data$Range,
+                        label2 = .data$Count,
+                        label3 = .data$density
                 ),
                 ...,
                 stat = "identity",

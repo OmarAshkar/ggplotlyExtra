@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggplotly_histogram.R
 \name{ggplotly_histogram}
 \alias{ggplotly_histogram}
-\title{Clean `ggplot2` Histogram to be Converted to `Plotly`}
+\title{Clean 'ggplot2' Histogram to be Converted to 'Plotly'}
 \usage{
 ggplotly_histogram(
   data = NULL,
@@ -69,10 +69,10 @@ display.}
 ggplot bar layer
 }
 \description{
-Create ggplot histogram that translate nicely to plotly.
+Create 'ggplot2' histogram that translate nicely to 'plotly'.
 }
 \details{
-ggplotly_histogram is a function that is used to create a `ggplot2` histogram, yet on conversion to `plotly` using `ggplotly()`, the resulted plot will hold the correct labeling information, which are "Range", "Count" and "Density".
+`ggplotly_histogram()` is a function that is used to create a 'ggplot2' histogram, yet on conversion to 'plotly' using 'ggplotly()', the resulted plot will hold the correct labeling information, which are "Range", "Count" and "Density".
 }
 \examples{
 
