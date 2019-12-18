@@ -4,7 +4,7 @@ Version: 0.0.1
 Author: Omar I. Elashkar <omar.ibrahim@miuegypt.edu.eg>
 Maintainer: Omar I. Elashkar <omar.ibrahim@miuegypt.edu.eg>
 Depends: R (>= 3.5.0)
-Description: Provide convenience functions for smooth conversion from 'ggplot' to 'plotly'.
+Description: Convenience functions for smooth conversion from 'ggplot' to 'plotly' where the conversion using ggplotly() usually gives an unexpected labels. The package ease the process of making a 'plotly' figures generated from 'ggplot2' object more aesthetic in terms of labels and customizability. 
 Imports: ggplot2, plotly, rlang
 License: GPL-3
 Encoding: UTF-8

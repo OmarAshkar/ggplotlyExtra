@@ -4,15 +4,8 @@
 \alias{ggplotly_histogram}
 \title{Clean 'ggplot2' Histogram to be Converted to 'Plotly'}
 \usage{
-ggplotly_histogram(
-  data = NULL,
-  mapping = NULL,
-  position = "stack",
-  ...,
-  binwidth = NULL,
-  na.rm = FALSE,
-  show.legend = NA
-)
+ggplotly_histogram(data = NULL, mapping = NULL, position = "stack",
+  ..., binwidth = NULL, na.rm = FALSE, show.legend = NA)
 }
 \arguments{
 \item{data}{The data to be displayed in this layer. There are three
